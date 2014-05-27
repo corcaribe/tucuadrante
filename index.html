@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBBMrVWWvBvI88R71VJOtOBbq15HyrVnJg&sensor=false">
+        </script>
+        <script type="text/javascript" src="./js/cuadrante1.js"></script>
+        
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <!-- Facebook SDK -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+        
+        
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Tu Cuadrante</h1>
+        <p>Esta es una aplicación sencilla basada en googlemaps, en la cual aparece un mapa con los Cuadrantes y los Teléfonos de contacto de las autoridades del Patrullaje Inteligente, según el "Plan Patria Segura". En primera instancia está desarrollado a modo de prueba, la información concerniente al Municipio Zamora del Estado Miranda.<br> Están invitados a participar y a mejorar la aplicación.<br><br>Este desarrollo no pretende sustituir las fuentes oficiales de información, nuestra intención es aportar nuestro granito de arena para que la colectividad pueda digerir de manera eficaz la implementación de planes y políticas públicas mediante el uso de las tecnologías de información</p>
+      </div>
+    </div>
+
+    <div class="container" id="googleMap" style="width:1024px;height:600px;" align="center"></div>
+    
+    <div class="container" id="facebook" align="center">   
+    <div class="fb-like" data-href="http://www.corcaribe.com/index.php/cuadrante" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+    
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.corcaribe.com/index.php/cuadrante" data-text="Tucuadrante, revisa, descarga, mejora, comparte" data-via="corcaribeTec" data-lang="es" data-related="corcaribeTec" data-hashtags="infoPatrullajeInteligente" data-dnt="true">Twittear</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Cuadrantes de Zamora</h2>
+          <p><b>Cuadrante 1:</b> 04268194385<br><b>Cuadrante 2:</b> 04268194980<br><b>Cuadrante 3:</b> 04268196114<br><b>Cuadrante 4:</b> 04268196526<br><b>Cuadrante 5:</b> 04268194692<br><b>Cuadrante 6:</b> 04268197063<br><b>Cuadrante 7:</b> 04167065277<br><b>Cuadrante 8:</b> 04167060711<br><br>Si marcas algunos de estos números y no logras comunicarte puedes llamar a este número: 04166209399<br><br> Otros números a tener en cuenta: 171 y 911<br><br>La información para elaborar este mapa fue obtenida desde <a href="http://www.diariolavoz.net/2014/05/16/cuadrantes-de-seguridad-herramienta-fundamental-contra-el-hampa-en-zamora/"> esta nota de prensa</a></p>
+        </div>
+        
+        <div class="col-md-4">
+          <h2>Código Fuente</h2>
+          <p>Está pequeña aplicación fue creada en nuestro tiempo libre, por lo tanto hay muchas cosas que se pueden mejorar. Creémos en el Software Libre, por eso compartimos esta información y el código. Si algún particular o ente del Estado quisiera colaborar con nosotros y ampliar las funcionalidades de este pequeño desarrollo para el beneficio de la colectividad pueden contactarnos por el correo <b><i>contacto@corcaribe.com</i></b> estamos a sus ordenes.<br> <a href="#">Puede Descargar el Código desde Aquí</a></p>
+        </div>
+          
+        <div class="col-md-4">
+          <h2>Sobre Corcaribe</h2>
+          <p>Somos una empresa de tecnología venezolana al servicio de la colectividad. Hacemos fácil lo dificil!!!. Te invitamos a conocernos y ayudarnos mutuamente</p>
+       </div>
+      </div>
+
+      <hr>
+    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
