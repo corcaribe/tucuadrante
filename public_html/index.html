@@ -1,21 +1,29 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!-- 
+#-----------------------------------
+#Nombre:
+#Version:0.1
+#Autor:Corcaribe contacto@corcaribe.com
+#Descripcion:Demo Mapa con Información Cuadrantes de Seguridad Municipio Zamora. Venezuela
+#Historial de Revision:
+#	0.1 25/05/2014:Version Original
+#-----------------------------------
+-->
 
-
+<html class="no-js">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        
+        <!-- API GoogleMaps -->
         <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBBMrVWWvBvI88R71VJOtOBbq15HyrVnJg&sensor=false">
         </script>
-        <script type="text/javascript" src="./js/cuadrante1.js"></script>
         
+        <!-- Información de Cuadrantes a mostrar en Mapa -->
+        <script type="text/javascript" src="./js/cuadrante1.js"></script>
         
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <style>
@@ -30,22 +38,17 @@
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
-        <div id="fb-root"></div>
         <!-- Facebook SDK -->
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.0";
-        fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-        
-        
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+        <!-- Fin Facebook SDK -->
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
@@ -55,17 +58,23 @@
       </div>
     </div>
 
+    <!-- MAPA -->
     <div class="container" id="googleMap" style="width:1024px;height:600px;" align="center"></div>
     
-    <div class="container" id="facebook" align="center">   
-    <div class="fb-like" data-href="http://www.corcaribe.com/index.php/cuadrante" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+    <!-- Fin MAPA -->
     
-    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.corcaribe.com/index.php/cuadrante" data-text="Tucuadrante, revisa, descarga, mejora, comparte" data-via="corcaribeTec" data-lang="es" data-related="corcaribeTec" data-hashtags="infoPatrullajeInteligente" data-dnt="true">Twittear</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <!-- Botones Sociales Facebook y Twitter -->
+    <div class="container" id="facebook" align="center">   
+        <div class="fb-like" data-href="http://www.corcaribe.com/index.php/cuadrante" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+        
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.corcaribe.com/index.php/cuadrante" data-text="Tucuadrante, revisa, descarga, mejora, comparte" data-via="corcaribeTec" data-lang="es" data-related="corcaribeTec" data-hashtags="infoPatrullajeInteligente" data-dnt="true">Twittear</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
     </div>
+    <!-- Fin Botones Sociales Facebook y Twitter -->
 
+    <!-- Info Adicional -->
     <div class="container">
-      <!-- Example row of columns -->
+      <!-- Columnas -->
       <div class="row">
         <div class="col-md-4">
           <h2>Cuadrantes de Zamora</h2>
@@ -84,7 +93,9 @@
       </div>
 
       <hr>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    </div>
+    <!-- /container -->        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
@@ -98,7 +109,7 @@
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
+            ga('create','UA-35882584-1');ga('send','pageview');
         </script>
     </body>
 </html>

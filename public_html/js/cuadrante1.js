@@ -1,8 +1,12 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+/*-----------------------------------
+#Nombre: Cuadrante1.js
+#Version:0.1
+#Autor:Corcaribe contacto@corcaribe.com
+#Descripcion:Demo Mapa con Información Cuadrantes de Seguridad Municipio Zamora. Venezuela
+#Historial de Revision:
+#	0.1 25/05/2014:Version Original
+----------------------------------- */
+
 //Coordenadas
 
 //Centro
